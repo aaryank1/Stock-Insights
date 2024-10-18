@@ -17,12 +17,17 @@ This Python project provides real-time updates on stock price movements and fetc
 ## Setup Instructions
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/stock-market-notifier.git
    cd stock-market-notifier
 
+2. Install the required Python packages:
+
    ```bash
    pip install requests python-dotenv twilio
+
+3. Create a .env file in the project directory and add the following variables:
 
 ACCOUNT_SID=<Your Twilio Account SID>
 AUTH_TOKEN=<Your Twilio Auth Token>
@@ -31,6 +36,8 @@ NEWS_API_KEY=<Your NewsAPI Key>
 SMS_NO=<Your Twilio SMS Number>
 WHATSAPP_NO=<Your Twilio WhatsApp Number>
 USER_NO=<Recipient Phone Number>
+
+4. Update the stock symbol and company name in the script as needed:
 
 STOCK = "IBM"  # Change this to your preferred stock
 COMPANY_NAME = "IBM"
